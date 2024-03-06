@@ -1,0 +1,223 @@
+/* external styles */
+
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+
+}
+.paragraph {
+    font-family: 'monteserrat', sans-serif;
+    font-weight: 300;
+    color:#0766AD;
+    font-size: 20px;
+}
+
+/* .extra-paragraph {
+    border: 1px solid maroon;
+} */
+
+
+h1 {
+    text-align: center;
+    background-color: #124076;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    padding-top: 16px;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+
+.top-section {
+    text-align: center;
+    background-color: #F6F5F5;
+    margin-top: 0;
+    padding: 16px 0;
+}
+
+em {
+    color: #860A35;
+}
+
+
+.second-section {
+    padding: 20px 0;
+    background-color: #F0F3FF;
+    /* background-color: #860A35; */
+    /* border: 5px solid red; */
+}
+.stack {
+    text-align: center;
+    background-color: #124076;
+    padding: 10px 0;
+    color: white;
+    margin: 0;
+    /* border: 5px solid magenta */
+
+}
+
+.second-section_div {
+    text-align: center;
+    /* border: 1px solid white; */
+}
+
+.second-section_div > ul {
+    display: inline-block;
+    /* border: 1px solid #fff; */
+}
+
+.second-section_div > ul > li {
+    padding: 10px 5px;
+    color: #0766AD;
+    text-align: left;
+}
+
+.education {
+    background-color: #124076;
+    text-align: center;
+    padding: 10px 5px;
+    color: #fff; 
+    /* border: 1px solid red; */
+}
+
+.second-section_education {
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.second-section_education > ol {
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+
+.second-section_education > ol > li {
+    padding: 10px 5px;
+    text-align: left;
+    color: #0766AD;
+}
+
+.contact {
+    padding: 50px 0;
+    text-align: center;
+   background-color: #51829B;
+   color: #fff;
+}
+
+.contact input {
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #51829B;
+}
+
+
+form > p {
+    margin: 10px 0;
+}
+
+.btn {
+    padding: 10px 32px;
+    margin-top: 16px;
+    background-color: #124076;
+    color: #fff;
+    border: 0;
+    border-radius: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.8;
+    /* transform: scale(1.5); */
+    /* transition: ease-in-out 2s; */
+
+}
+/* .second-section {
+    padding: 16px 0;
+    background-color: #F0F3FF;
+
+}
+
+
+.stack {
+    background-color: #124076;
+    text-align: center;
+    padding: 10px
+    color: #fff;
+}
+
+.second-section_div {
+    text-align: center;
+}
+
+.second-section_div > ul {
+    display: inline-block;
+}
+
+.second-section_div > ul > li {
+    text-align: left;
+    list-style-image: url('./list.svg');
+    padding: 10px 5px;
+    color: #0766AD;
+}
+
+.education {
+    background-color: #124076;
+    text-align: center;
+    padding: 10px 5px;
+    color: #fff;
+}
+
+.second-section_education {
+    text-align: center;
+}
+
+.second-section_education > ol {
+    display: inline-block;
+}
+
+.second-section_education > ol > li {
+    padding: 10px 5px;
+    color: #0766AD;
+    text-align: left;
+}
+
+form > p {
+    margin: 10px 0;
+}
+
+.contact {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #51829B;
+    color: #fff;
+}
+
+.contact input {
+    border: none;
+    border-bottom: 2px solid grey;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.contact > button {
+    background-color: #124076;
+    color: #fff;
+    padding: 10px 48px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    font-size: 14px;
+    margin-bottom: 48px;
+}
+
+.contact > button:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+
+} */
