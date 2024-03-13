@@ -1,5 +1,10 @@
 /* external styles */
 
+:root {
+    --blue-bg:  #124076;
+    --white-color: #fff;
+    --yellow: #F4CE14;
+}
 
 body {
     margin: 0;
@@ -8,11 +13,63 @@ body {
 
 }
 
+
+.nav-container {
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    width: 80%;
+    /* border: 2px solid red; */
+    margin: 0 auto;
+    align-items: center;
+}
+
+.nav-container_ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    
+}
+
+.li_hover {
+    padding: 6px 12px;
+    position: relative;
+}
+
+.li_hover:hover {
+    border-bottom: 3px solid #F4CE14;
+}
+
+/* .li_pseudo::first-letter {
+    content: '';
+    font-size: 2rem;
+    color: red;
+    font-family: cursive;
+} */
+
+.nav-container_ul_btn {
+    border: none;
+    padding: 10px 20px;
+    /* background-color: var(--yellow); */
+    border-radius: 16px;
+}
+
+.nav-container_ul_btn:hover {
+     background-color: var(--yellow);
+     transition: all 1s ease-out;
+
+}
+
 .top-banner {
     background-color: #222831;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* border: 5px solid red; */
-    padding: 200px 0;
-    /* min-height: 100vh; */
+    /* padding: 200px 0; */
+    min-height: calc(100vh - 67.813px);
     background-image: url('../../assets/banner.jpeg'); 
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,7 +156,7 @@ em {
 }
 .stack {
     text-align: center;
-    background-color: #124076;
+    background-color: var(--blue-bg);
     padding: 10px 0;
     color: white;
     margin: 0;
@@ -277,3 +334,42 @@ form > p {
     opacity: 0.8;
 
 } */
+
+
+/* NOTES  ON POSITION PROPERTY*/
+
+/* every HTML element has a positon of "static"
+
+position relative offsets your HTML element from where it used to be in the flow of the document 
+
+when using any position property apart from static, we have to specify a offset value of "left", "right", "top", "bottom" 
+
+position absolute will position an element in relation to the closest ancestor with a position value that is not static
+
+fixed position will position an element relative to the browswer window.
+*/
+
+
+/* flexbox Must-know */
+
+
+/* adding display: flex to your flex container makes the children elements
+flex-items.
+
+the flex items would get as small as the content within sitting side by side 
+on the main axis (horizontal)
+
+the default flex directon is set to row, which makes the main axis (left - right) and cross axis (top to bottom)
+
+when flex direction is explicitly set to column, main axis becomes
+(top -> bottom ) and cross axis becomes (left -> right)
+
+justify-content property is set on the flex container and it controls the space 
+on the main axis. As long as the flex direction is ROW!
+
+align-items property is set on the flex container and it controls the space on 
+the cross axis. As long as the flex direction is ROW!
+
+if there is no space within the container, none of these properties would work. 
+*/
+ß
