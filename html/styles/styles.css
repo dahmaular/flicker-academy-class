@@ -15,6 +15,7 @@ html {
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
+    position: relative;
     /* border: 5px solid maroon; */
 
 }
@@ -41,7 +42,7 @@ section {
     position: relative;
     align-items: center;
     /* border: 2px solid red; */
-    gap: 30px;
+    gap: 15px;
     
 }
 
@@ -73,6 +74,10 @@ section {
 }
 
 
+.mobile-nav-container {
+    display: none;
+}
+
 
 .nav-container_ul_btn {
     border: none;
@@ -86,6 +91,27 @@ section {
      transition: all 1s ease-out;
 
 }
+
+/* mobile nav dropdown styles */
+
+.mobile-nav-container {
+    display: none;
+   
+}
+
+.mobile-nav-container ul {
+    list-style: none;
+}
+
+.mobile-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
 
 
 /* flexbox html page css rule set */
@@ -402,7 +428,7 @@ form > p {
 }
 
 /* tablet breakpoint */
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 950px) {
     .nav-container {
         width: 90%;
         
@@ -410,7 +436,7 @@ form > p {
     }
 
     .nav-container_ul {
-        gap: 10px;
+        gap: 5px;
     }
     .projects {
         justify-content: center;
@@ -420,6 +446,47 @@ form > p {
     .project-child {
         flex-basis: 35%;
     }
+}
+
+@media (max-width: 770px) {
+    .nav-container_ul {
+        display: none;
+    }
+    .bars-container {
+        display: block;
+    }
+
+    .mobile-nav-container {
+        width:50%;
+        min-height: 100vh;
+        background-color: #F4CE14;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 4.2rem;
+        left: 0;
+        z-index: 100;
+        transform: translateX(-10px);
+        transition: all 1s;
+    }
+
+    .mobile-nav-container ul {
+        padding: 0;
+        flex-basis: 70%;
+        display: flex;
+        flex-direction: column;
+        /* align-items: stretch; */
+        gap: 2rem;
+       
+    }
+    .mobile-nav-container li:hover {
+        background-color: #fff;
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 16px;
+    }
+
 }
 
  @media screen and (max-width: 620px) {
